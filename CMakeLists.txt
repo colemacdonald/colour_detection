@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( open_cam )
+find_package( OpenCV REQUIRED )
+add_executable( open_cam  open_cam.cpp )
+target_link_libraries( open_cam ${OpenCV_LIBS} )
